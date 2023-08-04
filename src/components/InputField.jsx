@@ -1,9 +1,10 @@
 import React from 'react'
 
-const InputField = () => {
+const InputField = (props) => {
   return (
     <div>
-     INPUT COMPONENT 
+      <label  htmlFor={props.name} >{props.label}</label>
+      <input type={props.type} placeholder={props.placeholder} name={props.name}/>
     </div>
   )
 }
